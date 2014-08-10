@@ -2,6 +2,11 @@
 #
 #
 readData <- function(from=as.Date('1/2/2007',format='%d/%m/%Y'), to=as.Date('2/2/2007',format='%d/%m/%Y')){
+    # 1. check if data file have been already unzipped
+    if ( file.exists("household_power_consumption.txt") == FALSE){
+        unzip("exdata_data_household_power_consumption.zip")
+    }
+    # 2. read data file
     data <- NULL
     delta <- 100000
     step <- 0
