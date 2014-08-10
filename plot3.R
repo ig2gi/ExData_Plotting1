@@ -9,7 +9,7 @@ plot3 <- function(){
     png(filename = "plot3.png",width = 480, height = 480)
     # plot
     with(data, {
-        plot(DateTime, Sub_metering_1,  type="l" , xlab="", ylab="Global Active Power (kilowatts)")
+        plot(DateTime, Sub_metering_1,  type="l" , xlab="", ylab="Energy sub metering")
         lines(DateTime, Sub_metering_2, col="red")
         lines(DateTime, Sub_metering_3, col="blue")
     })
