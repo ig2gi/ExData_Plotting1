@@ -1,4 +1,6 @@
-
+#
+#
+#
 readData <- function(from=as.Date('1/2/2007',format='%d/%m/%Y'), to=as.Date('2/2/2007',format='%d/%m/%Y')){
     data <- NULL
     delta <- 100000
